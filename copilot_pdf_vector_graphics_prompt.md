@@ -25,12 +25,7 @@ Please tell me what you find and provide the extracted image if successful.
 - If the page contains true vector drawing commands rather than an embedded image, this method may not fully recover the figure as expected.
 - If extraction fails, try asking Copilot to inspect all XObject entries on the page and report their subtype, filter, width, and height before exporting anything.
 
-## Optional stronger variant
-
-If the first prompt does not work, try this more explicit version:
-
-Open the PDF with PyPDF2, go to page 61, inspect the page resources, extract the XObject dictionary, find any image object using `/JPXDecode`, recover the raw JPX bytes, decode them with Pillow, and save the result as PNG or JPG. If there are multiple candidate images, list them first and choose the one most likely to be the chart.
 
 ## Caution
 
-This is a practical prompt pattern, not a guaranteed method. PDF internals vary a lot, so results depend on how the original document was created.
+This is a practical prompt pattern, not a guaranteed method, considering the fast version iteration of LLMs. PDF internals vary a lot, so results depend on how the original document was created.
