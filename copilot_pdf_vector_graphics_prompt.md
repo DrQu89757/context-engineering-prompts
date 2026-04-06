@@ -1,6 +1,6 @@
 # Extract vector graphics or embedded chart images from a PDF with Copilot
 
-Sometimes a simple prompt like “show me the image on page 61” does not work well, especially when the graphic is embedded inside a PDF stream.
+Sometimes, a simple prompt of showing the figures of a PDF file does not work well using Copilot, especially when the graphic is embedded inside a PDF stream.
 
 A more reliable approach is to ask Copilot to follow a concrete extraction workflow. You can try the prompt below and then adjust the page number or output format as needed.
 
